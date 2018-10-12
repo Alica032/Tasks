@@ -113,7 +113,7 @@ int main(int argc, char **argv)
 
             {
                 while(max_n_tmp > 1){
-                    kernel.exec(gpu::WorkSize(workGroup, count_group*workGroup),
+                    kernel.exec(gpu::WorkSize(workGroup, max_n_tmp),
                                 buffer_old, max_n_tmp, buffer_tmp);
 
                     buffer_old.swap(buffer_tmp);
@@ -122,7 +122,6 @@ int main(int argc, char **argv)
 
                 buffer_old.readN(res_gpu.data(), 2);
             }
-            std::cout << res_gpu[0] << ' ' << res_gpu[1]<< res_gpu[2] << ' ' << res_gpu[3] << '\n';
 
             EXPECT_THE_SAME(reference_max_sum, std::max(res_gpu[0], 0), "CPU result should be consistent!");
         }
