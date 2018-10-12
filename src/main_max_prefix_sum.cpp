@@ -23,7 +23,6 @@ int main(int argc, char **argv)
 {
     int benchmarkingIters = 10;
     int max_n = (1 << 24);
-    std::cout<<std::numeric_limits<int>::max();
 
     for (int n = 2; n <= max_n; n *= 2) {
         std::cout << "______________________________________________" << std::endl;
@@ -82,48 +81,53 @@ int main(int argc, char **argv)
 
             for(int i=0; i<max_n_tmp; i++){
                 as_gpu[i+max_n_tmp] = as[i];
-                as_gpu[i] = as[i];
+                as_gpu[i] = std::max(as[i], 0);
             }
 
             std::vector<int> res_gpu(max_n_tmp*2, 0);
 
-//            char *argvv[] = { "device", "0" };
-//            gpu::Device device = gpu::chooseGPUDevice(2, argvv);
-            gpu::Device device = gpu::chooseGPUDevice(argc, argv);
-
+            char *argvv[] = { "device", "0" };
+            gpu::Device device = gpu::chooseGPUDevice(2, argvv);
 
             gpu::Context context;
             context.init(device.device_id_opencl);
             context.activate();
 
-            gpu::gpu_mem_32i buffer_old;
-            gpu::gpu_mem_32i buffer_tmp;
-
             const unsigned int workGroup = 128;
             unsigned count_group = (max_n_tmp + workGroup - 1) / workGroup;
+            gpu::gpu_mem_32i buffer_tmp;
 
-            buffer_old.resizeN(max_n_tmp*2);
             buffer_tmp.resizeN(count_group * 2);
 
-            buffer_old.writeN(as_gpu.data(), max_n_tmp*2);
-
             ocl::Kernel kernel(max_prefix_sum_kernel, max_prefix_sum_kernel_length, "max_prefix_sum");
-
             kernel.compile();
 
             {
-                while(max_n_tmp > 1){
-                    kernel.exec(gpu::WorkSize(workGroup, max_n_tmp),
-                                buffer_old, max_n_tmp, buffer_tmp);
+                timer t;
+                for (int iter = 0; iter < benchmarkingIters; ++iter) {
+                    max_n_tmp = static_cast<unsigned int>(n);
 
-                    buffer_old.swap(buffer_tmp);
-                    max_n_tmp = (max_n_tmp + workGroup - 1) / workGroup;
+                    gpu::gpu_mem_32i buffer_old;
+                    buffer_old.resizeN(max_n_tmp*2);
+
+                    buffer_old.writeN(as_gpu.data(), max_n_tmp*2);
+
+                    while (max_n_tmp > 1) {
+                        kernel.exec(gpu::WorkSize(workGroup, max_n_tmp),
+                                    buffer_old, max_n_tmp, buffer_tmp);
+
+                        buffer_old.swap(buffer_tmp);
+                        max_n_tmp = (max_n_tmp + workGroup - 1) / workGroup;
+
+                    }
+                    t.nextLap();
+
+                    buffer_old.readN(res_gpu.data(), 2);
+                    EXPECT_THE_SAME(reference_max_sum, std::max(res_gpu[0], 0), "GPU result should be consistent!");
                 }
-
-                buffer_old.readN(res_gpu.data(), 2);
+                std::cout << "GPU: " << t.lapAvg() << "+-" << t.lapStd() << " s" << std::endl;
+                std::cout << "GPU: " << (n / 1000.0 / 1000.0) / t.lapAvg() << " millions/s" << std::endl;
             }
-
-            EXPECT_THE_SAME(reference_max_sum, std::max(res_gpu[0], 0), "CPU result should be consistent!");
         }
     }
 
