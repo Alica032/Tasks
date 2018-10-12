@@ -71,7 +71,7 @@ int main(int argc, char **argv)
         context.activate();
 
         gpu::gpu_mem_32u as_gpu;
-        const unsigned int workGroupSize = 256;
+        const unsigned int workGroupSize = 128;
         unsigned int global_work_size = (n + workGroupSize - 1) / workGroupSize * workGroupSize;
 
         as_gpu.resizeN(n);
