@@ -87,7 +87,7 @@ int main(int argc, char **argv)
             std::vector<int> res_gpu(max_n_tmp*2, 0);
 
 //             char *argvv[] = { "device", "0" };
-            gpu::Device device = gpu::chooseGPUDevice(argc, argvv);
+            gpu::Device device = gpu::chooseGPUDevice(argc, argv);
 
             gpu::Context context;
             context.init(device.device_id_opencl);
