@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 {
 //            char *argvv[] = { "device", "0" };
 //            gpu::Device device = gpu::chooseGPUDevice(2, argvv);
-//    gpu::Device device = gpu::chooseGPUDevice(argc, argv);
+   gpu::Device device = gpu::chooseGPUDevice(argc, argv);
 
     unsigned int benchmarkingIters = 10;
 
