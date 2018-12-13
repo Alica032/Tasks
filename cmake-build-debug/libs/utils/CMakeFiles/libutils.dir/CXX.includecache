@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/thread_mutex.cpp
+thread_mutex.h
+/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/thread_mutex.h
+cassert
+-
+errno.h
+-
+
+/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/thread_mutex.h
+windows.h
+-
+pthread.h
+-
+

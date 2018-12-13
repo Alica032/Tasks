@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -g    -rdynamic CMakeFiles/max_prefix_sum.dir/src/main_max_prefix_sum.cpp.o  -o max_prefix_sum libs/clew/liblibclew.a libs/gpu/liblibgpu.a libs/utils/liblibutils.a libs/gpu/liblibgpu.a libs/utils/liblibutils.a libs/clew/liblibclew.a -ldl -pthread 

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libutils"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\clew\;CMake Files\libs\gpu\;CMake Files\libs\images\;CMake Files\libs\utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libutils">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/liblibutils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/utils"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/clew"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 libutils"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libutils/fast">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/liblibutils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/utils"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/clew"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 libutils/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/fast_random.h">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/misc.cpp">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/misc.h">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/string_utils.cpp">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/string_utils.h">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/thread_mutex.cpp">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/thread_mutex.h">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/libutils/timer.h">
+			<Option target="libutils"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/clew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\clew\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\gpu\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/images/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\images\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

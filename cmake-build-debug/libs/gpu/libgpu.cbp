@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libgpu"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\clew\;CMake Files\libs\gpu\;CMake Files\libs\images\;CMake Files\libs\utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hexdumparray">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/hexdumparray" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 hexdumparray"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hexdumparray/fast">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/hexdumparray" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 hexdumparray/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libgpu">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/liblibgpu.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/clew"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 libgpu"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libgpu/fast">
+				<Option output="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/liblibgpu.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/clew"/>
+					<Add directory="/home/alica032/Documents/csc/gpu/Tasks/libs/utils"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 libgpu/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alica032/Documents/csc/gpu/Tasks/cmake-build-debug/libs/gpu/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/context.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/context.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/device.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/device.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/gold_helpers.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/gold_helpers.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/hexdumparray.cpp">
+			<Option target="hexdumparray"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/device_info.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/device_info.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/engine.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/engine.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/enum.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/enum.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/utils.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/opencl/utils.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/shared_device_buffer.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/shared_device_buffer.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/shared_host_buffer.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/shared_host_buffer.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/utils.cpp">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/utils.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/libgpu/work_size.h">
+			<Option target="libgpu"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/clew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\clew\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/gpu/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\gpu\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/images/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\images\"/>
+		</Unit>
+		<Unit filename="/home/alica032/Documents/csc/gpu/Tasks/libs/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
